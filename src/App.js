@@ -1,9 +1,9 @@
 import React from "react";
 
-import Chat from "./components/Chat/Chat";
+// import Chat from "./components/Chat/Chat";
 import Join from "./components/Join/Join";
-import DoctorList from "./components/DoctorList/DoctorList";
-import WaitingQueue from "./components/WaitingQueue/WaitingQueue";
+import Doctors from "./components/Doctors/Doctors";
+import Waiting from "./components/Waiting/Waiting";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -11,9 +11,8 @@ const App = () => {
   return (
     <Router>
       <Route path="/" exact component={Join} />
-      <Route path="/chat" component={Chat} />
-      <Route path="/doctor-list" component={DoctorList} />
-      <Route path="/waiting-queue" component={WaitingQueue} />
+      <Route path="/waiting-queue" component={Waiting} />
+      <Route path="/doctor-list" component={Doctors} />
     </Router>
   );
 };
